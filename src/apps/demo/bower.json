@@ -1,0 +1,12 @@
+{
+    "name": "demo",
+    "version": "0.0.1",
+    "dependencies": {
+
+    },
+    "devDependencies": {
+        "angular-mocks": "~1.2.x",
+        "angular-scenario": "~1.2.x"
+    },
+    "appPath": "assets"
+}

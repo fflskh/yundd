@@ -1,0 +1,19 @@
+<ul class="pagination" ng-show="total > perPages[0] ">
+    <li ng-class="{disabled: !prev}">
+        <a href=""  title="上一页" ng-click="paginationTo(prev)">
+       上一页</a></li>
+    <li ng-class="{active: n==pageIndex, disabled: n=='…'}" ng-repeat="n in showPages track by $index">
+        <a href="" title="{{n!='…'?'第'+n+'页':''}}"
+           ng-click="paginationTo(n)">{{n}}</a>
+    </li>
+    <li ng-class="{disabled: !next}">
+        <a href="" title="下一页" ng-click="paginationTo(next)">
+        下一页</a></li>
+    <li ng-class="{disabled: true}">
+        <span>每页</span>
+    </li>
+    <li class="pure-hidden-phone" ng-class="{active: s==pageSize}" ng-repeat="s in perPages">
+        <a href=""  title="每页{{s}}" ng-click="paginationTo(1, s)">{{s}}</a>
+    </li>
+
+</ul>

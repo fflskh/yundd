@@ -1,0 +1,39 @@
+<div>
+    <p>
+        目前你访问的是演示程序首页！<a ng-href="/about">关于我们</a> &nbsp;&nbsp;&nbsp;&nbsp;<a ng-href="/form">土豪，我么做朋友吧！</a>
+    </p>
+    <div>
+        <input type="text" ng-model="data.a" />
+    </div>
+</div>
+
+<div class="btn-group" data-toggle="buttons">
+
+    <label class="btn btn-primary" ng-model="bigData.breakfast" btn-checkbox>
+        Breakfast
+    </label>
+
+    <label class="btn btn-primary" ng-model="bigData.lunch" btn-checkbox>
+        Lunch
+    </label>
+
+    <label class="btn btn-primary" ng-model="bigData.dinner" btn-checkbox>
+        Dinner
+    </label>
+
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a href="#" ng-click="isCollapsed = !isCollapsed">
+                Collapsible Group Item #1
+            </a>
+        </h4>
+    </div>
+    <div collapse="isCollapsed">
+        <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+    </div>
+</div>

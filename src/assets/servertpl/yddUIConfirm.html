@@ -1,0 +1,21 @@
+<div class="modal-header">
+    <h3 class="modal-title ng-binding">
+        <span class="glyphicon glyphicon-question-sign" style=" color:#F90"></span>
+        &nbsp;注意：{{title}}
+    </h3>
+</div>
+
+<div class="modal-body">
+    <form class="form-horizontal" id="popup-validation" style=" margin-top:20px; padding-bottom:5px;">
+        <div class="form-group">
+          <p class="remove">{{msg}}</p>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-danger" ng-click="ok()">确认</button>
+    <button class="btn btn-default" ng-click="cancel()">取消</button>
+</div>
+
+
+

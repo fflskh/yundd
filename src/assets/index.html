@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" id="ng-app" ng-app="YDD">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit"><!--webkit|ie-comp|ie-stand-->
+    <meta name="title" content="{{global.metatitle}}">
+    <meta name="description" content="{{global.metadesc }}">
+    <meta name="keywords" content="{{global.keywords}}">
+    <title ng-bind="global.title"></title>
+    <!-- STYLES -->
+
+    <!-- build:yddcss /css/yddcss.min.css -->
+
+    <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./bower_components/ngDialog/css/ngDialog.min.css">
+    <link rel="stylesheet" type="text/css" href="./bower_components/ngDialog/css/ngDialog-theme-default.min.css">
+    <!-- endbuild -->
+
+    <!-- SCRIPTS -->
+
+    <!-- build:jshtml5 /js/ie5shim.js -->
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="./bower_components/es5-shim/es5-shim.js"></script>
+    <!--<script type="text/javascript" src="js/ie7fix.js"></script>-->
+    <!--[endif]-->
+    <!-- endbuild -->
+
+
+    <!-- build:yddjslib /js/lib.min.js -->
+
+    <script type="text/javascript" src="./bower_components/angular/angular.MIN.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-animate/angular-animate.MIN.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.MIN.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-ui-utils/validate.MIN.js"></script>
+    <script type="text/javascript" src="./bower_components/ng-file-upload/ng-file-upload.MIN.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-route/angular-route.MIN.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-resource/angular-resource.MIN.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-cookies/angular-cookies.MIN.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-i18n/angular-locale_zh-cn.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.MIN.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-translate/angular-translate.MIN.js"></script>
+    <script type="text/javascript" src="./bower_components/ngDialog/js/ngDialog.MIN.js"></script>
+
+    <script type="text/javascript" src='./bower_components/crypto-js/crypto-js.js'></script>
+    <script type="text/javascript" src='./bower_components/crypto-js/hmac-sha256.js'></script>
+    <script type="text/javascript" src='./bower_components/utf8/utf8.js'></script>
+    <script type="text/javascript" src='./bower_components/store2/dist/store2.min.js'></script>
+    <script type="text/javascript" src='./bower_components/jsonkit/jsonkit.min.js'></script>
+    <script type="text/javascript" src='./bower_components/json3/lib/json3.min.js'></script>
+    <script type="text/javascript" src='./bower_components/google-code-prettify/src/prettify.js'></script>
+    <script type="text/javascript" src='./bower_components/lodash/lodash.min.js'></script>
+    <!-- endbuild -->
+
+
+    <!-- CommonScripts -->
+
+    <!-- build:yddlib /js/ydd.min.js -->
+    <script type="text/javascript" src="ydd_components/defined.js"></script>
+    <script type="text/javascript" src="ydd_components/ydd.js"></script>
+    <script type="text/javascript" src="ydd_components/services.js"></script>
+    <script type="text/javascript" src="ydd_components/directives.js"></script>
+    <script type="text/javascript" src="ydd_components/filters.js"></script>
+    <script type="text/javascript" src="ydd_components/locales/locale_zh-cn.js"></script>
+    <script type="text/javascript" src="ydd_components/appRun.js"></script>
+    <!-- endbuild -->
+
+    <!-- Custom Scripts -->
+    <!-- build:customjs /js/serverbase.min.js -->
+    <script type="text/javascript" src="syscripts/services/restAPI.js"></script>
+    <script type="text/javascript" src="syscripts/routers/mainRouters.js"></script>
+    <script type="text/javascript" src="syscripts/controllers/indexCtrl.js"></script>
+    <script type="text/javascript" src="syscripts/controllers/aboutCtrl.js"></script>
+    <!-- endbuild -->
+
+    <base href="/">
+</head>
+<body>
+
+<div class="main-wrap clear">
+<div id="main" ng-view></div>
+</div>
+<!-- start foot -->
+<div class="foot">
+</div>
+<!-- end foot -->
+</body>
+</html>
