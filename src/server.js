@@ -75,7 +75,7 @@ serverDm.run(function () {
 
 
     function exit() {
-        YDD.db.Conection.close(function () {
+        YDD.db.Connection.close(function () {
         });
         return process.exit(1);
     }

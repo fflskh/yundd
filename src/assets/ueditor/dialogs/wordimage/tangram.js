@@ -972,7 +972,7 @@ baidu.flash.fileUploader = baidu.flash.fileUploader || function(options){
     /**
      * 添加文件类型，支持macType
      * @public
-     * @param {Object|Array[Object]} type {description:String, extention:String}
+     * @param {Object|Array[Object]} type {description:String, extension:String}
      * @return {Null};
      */
     me.addFileType = function(type){
@@ -986,7 +986,7 @@ baidu.flash.fileUploader = baidu.flash.fileUploader || function(options){
     /**
      * 设置文件类型，支持macType
      * @public
-     * @param {Object|Array[Object]} type {description:String, extention:String}
+     * @param {Object|Array[Object]} type {description:String, extension:String}
      * @return {Null};
      */
     me.setFileType = function(type){

@@ -318,7 +318,7 @@ var utils = UE.utils = {
      * };
      *
      * //output: key1: 1, key2: 2
-     * UE.utils.each( demoObj, funciton ( value, key ) {
+     * UE.utils.each( demoObj, function ( value, key ) {
      *
      *     console.log( key + ":" + value );
      *
@@ -336,7 +336,7 @@ var utils = UE.utils = {
      * var divs = document.getElmentByTagNames( "div" );
      *
      * //output: 0: DIV, 1: DIV ...
-     * UE.utils.each( divs, funciton ( value, key ) {
+     * UE.utils.each( divs, function ( value, key ) {
      *
      *     console.log( key + ":" + value.tagName );
      *
